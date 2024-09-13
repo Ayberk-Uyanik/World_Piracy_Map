@@ -339,7 +339,7 @@ layout = html.Div ([
                     ], style={
                        "padding":"20px 20px"
                     })
-                ], id="piracy_markers"), sm=6, md=6, lg=8
+                ]), sm=6, md=6, lg=8
             )
         ], style={"padding":"20px 20px"})
 ], style={"margin-top":"3em"})
