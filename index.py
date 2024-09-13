@@ -33,6 +33,8 @@ app.layout = html.Div([
     footer_content
 ])
 
+server = app.server
+
 # Create the callback to handle mutlipage inputs
 @app.callback(
     Output("page-content", "children"),
