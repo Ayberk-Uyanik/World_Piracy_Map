@@ -1,15 +1,20 @@
 # Import necessary libraries 
 from dash import html, dcc
 from dash.dependencies import Input, Output
-
-# Connect to main app.py file
-from app import app
+from dash import Dash
+import dash_bootstrap_components as dbc
 
 # Connect to your app pages
 from pages import Global_Outlook2
 
 # Connect the navbar to the index
 from components import navbar, footer
+
+# Multi Page Configuration #
+# App styling codes #
+bootstrap = dbc.themes.BOOTSTRAP
+bootstrap_icons = dbc.icons.BOOTSTRAP
+local_css = "/assets/styles/styles.css"
 
 # Importing and Assigning Navbar and Footer #
 nav = navbar.Navbar()
@@ -52,8 +57,6 @@ app.layout = html.Div([
 
     footer_content
 ])
-
-server = app.server
 
 # Create the callback to handle mutlipage inputs
 @app.callback(
