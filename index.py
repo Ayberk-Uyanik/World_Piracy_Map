@@ -48,8 +48,9 @@ def display_page(pathname):
     else: 
         return "404 Page Error!"
 
-# Run the app on localhost:8050
+# Run the app 
 if __name__ == '__main__':
     app.run_server(
-        debug=False
+        debug=False,
+        port="8080"
     )
