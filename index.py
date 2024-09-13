@@ -46,7 +46,9 @@ app.layout = html.Div([
         pathname="/pages/Global_Outlook2"
     ),
 
-    nav, 
+    nav,
+
+    Global_Outlook2.layout,
 
     html.Div(
         id="page-content", 
