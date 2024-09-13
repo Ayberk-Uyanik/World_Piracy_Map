@@ -3,22 +3,6 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-from sqlalchemy import create_engine
-
-## SQL Database Connection Using SQLAlchemy ##
-def fetch_piracy_data():
-    # Connection string
-    engine = create_engine('mssql+pyodbc://@' + 'ANK19393\MSSQLSERVER2022' + '/' + 'sectoral' + '?trusted_connection=yes&driver=SQL+Server')
-
-    # SQL query to fetch all data from a table
-    query = 'SELECT * FROM world_pirate_attacks;'
-
-    # Execute the query and fetch the data into a DataFrame
-    df = pd.read_sql(query, engine)
-    # df_sorted = df.sort_values(by=["Dates"])
-
-    # Display the DataFrame
-    return df
 
 # Import Pirate Attacks #
 def get_pirate_attacks():
