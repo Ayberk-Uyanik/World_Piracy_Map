@@ -1,0 +1,9 @@
+dash==2.15.0
+dash_leaflet
+dash_ag_grid
+dash_chart_editor
+dash_bootstrap_components
+numpy
+pandas
+plotly
+gunicorn

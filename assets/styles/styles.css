@@ -1,0 +1,24 @@
+.export {
+    background-color: rgb(44, 94, 243);
+    width: 75px;
+    height: 40px;
+    color:white;
+    border: 0.2px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+/* .export:hover,
+.export:focus {
+    background-color: #333;
+    text-decoration: none;
+} */
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input:not([type=radio]):not([type=checkbox]){
+    color: white!important;
+}
+
+.abroad-productions-pop-up {
+    width: 750px;
+    height: 600px;
+}
