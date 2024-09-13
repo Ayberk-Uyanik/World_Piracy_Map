@@ -20,7 +20,7 @@ app.layout = html.Div([
     dcc.Location(
         id="url", 
         refresh=False,
-        pathname="/pages/Global_Outlook2/"
+        pathname="/pages/Global_Outlook2"
     ),
 
     nav, 
@@ -45,7 +45,7 @@ server = app.server
 )
     
 def display_page(pathname):
-    if pathname == "/pages/Global_Outlook2/":
+    if pathname == "/pages/Global_Outlook2":
         return Global_Outlook2.layout
     else: 
         return "404 Page Error!"
@@ -53,6 +53,5 @@ def display_page(pathname):
 # Run the app 
 if __name__ == '__main__':
     app.run_server(
-        debug=False,
-        port="8080"
+        debug=False
     )
