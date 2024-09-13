@@ -40,38 +40,35 @@ app.title = "World Piracy Map"
 
 # Define the index page layout
 app.layout = html.Div([
-    #dcc.Location(
-     #   id="url", 
-      #  refresh=False,
-       # pathname="/pages/Global_Outlook2"
-    #),
+    dcc.Location(
+        id="url", 
+        refresh=False,
+        pathname="/pages/Global_Outlook2"
+    ),
 
     nav, 
 
     html.Div(
         id="page-content", 
-        children=[
-           Global_Outlook2.layout
-        ]
+        children=[]
     ),
 
     footer_content
 ])
 
 # Create the callback to handle mutlipage inputs
-#@app.callback(
-    #Output("page-content", "children"),
-   # [
-  #      Input("url", "pathname")
- #   ]
-              
-#)
+@app.callback(
+    Output("page-content", "children"),
+    [
+        Input("url", "pathname")
+    ]      
+)
     
-#def display_page(pathname):
-    #if pathname == "/pages/Global_Outlook2":
-     #   return Global_Outlook2.layout
-    #else: 
-     #   return "404 Page Error!"
+def display_page(pathname):
+    if pathname == "/pages/Global_Outlook2":
+        return Global_Outlook2.layout
+    else: 
+        return "404 Page Error!"
 
 # Run the app 
 if __name__ == '__main__':
