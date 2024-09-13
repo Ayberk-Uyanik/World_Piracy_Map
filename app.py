@@ -19,7 +19,8 @@ app = Dash(__name__,
             ],
            use_pages=True,  
            meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
-           suppress_callback_exceptions = True
+           suppress_callback_exceptions = True,
+           url_base_pathname="/pages/Global_Outlook2"
 )
 
 server = app.server
