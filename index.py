@@ -61,7 +61,8 @@ app.layout = html.Div([
     Output("page-content", "children"),
     [
         Input("url", "pathname")
-    ]      
+    ],
+    prevent_initial_call=True
 )
     
 def display_page(pathname):
