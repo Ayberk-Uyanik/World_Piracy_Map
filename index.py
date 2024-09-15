@@ -21,7 +21,7 @@ nav = navbar.Navbar()
 footer_content = footer.Footer()
 
 # Importing Main Content #
-main_content = Global_Outlok2.display_main_content()
+main_content = Global_Outlook2.display_main_content()
 
 # App Initiation #
 app = Dash(__name__, 
