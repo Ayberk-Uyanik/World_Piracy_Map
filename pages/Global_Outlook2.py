@@ -40,7 +40,7 @@ with open(r"assets/geojson/EEZ_Boundaries_JSON.json") as eez:
   eez_boundaries_json = json.load(eez)
 
 # App Layout #
-def display_main_content:
+def display_main_content():
   layout = html.Div ([ 
           dbc.Row([
               dbc.Col(
