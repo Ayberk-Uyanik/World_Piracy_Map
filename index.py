@@ -20,6 +20,9 @@ local_css = "/assets/styles/styles.css"
 nav = navbar.Navbar()
 footer_content = footer.Footer()
 
+# Importing Main Content #
+main_content = Global_Outlok2.display_main_content()
+
 # App Initiation #
 app = Dash(__name__, 
            external_scripts=["https://cdn.plot.ly/plotly-2.18.2.min.js", 
@@ -40,18 +43,19 @@ app.title = "World Piracy Map"
 
 # Define the index page layout
 app.layout = html.Div([
-    dcc.Location(
-        id="url", 
-        refresh=False,
-        pathname="/pages/Global_Outlook2/"
-    ),
+    #dcc.Location(
+     #   id="url", 
+      #  refresh=False,
+       # pathname="/pages/Global_Outlook2/"
+    #),
 
     nav,
 
-    html.Div(
-        id="page-content", 
-        children=[]
-    ),
+    #html.Div(
+     #   id="page-content", 
+      #  children=[]
+    #),
+    main_content,
 
     footer_content
 ])
